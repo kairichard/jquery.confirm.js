@@ -8,6 +8,10 @@ Usage:
 
     jQuery('a.delete').confirm({});
 
+Now if you click the "a.delete" Link it will replace the parent with the confirmation markup.
+If you the decide to confirm your deletetion it will fire the callback.
+When you cancel the confirmation it will replace the confirmation markup with the previous parent's content.
+
 Options:
     confirm_class:"blueButton",
     abort_class:"greyButton",

@@ -10,7 +10,7 @@
                 clicked_confirmation:function(event){
                     event.preventDefault();
                     jQuery.ajax({
-                        url:event.data.href,
+                        url:event.data.self.attr("href"),
                         dataType:"script"
                     });                    
                 }
@@ -29,7 +29,7 @@
                 var confirmation = jQuery("<a></a>").attr("href","javascript:void(0)").addClass(options.confirm_class).append(jQuery("<span></span>").html(options.confirm_text));
                 var cancel = jQuery("<a></a>").attr("href","javascript:void(0)").addClass(options.abort_class).append(jQuery("<span></span>").html(options.abort_text));
                 
-                confirmation.bind("click",{href:self.attr("href")},options.callbacks.clicked_confirmation);
+                confirmation.bind("click",{self:self},options.callbacks.clicked_confirmation);
                 cancel.bind("click",{restore:parent.html()},function(event){
                     jQuery(this).parent().html(event.data.restore);
                 });
