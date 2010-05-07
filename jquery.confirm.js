@@ -5,6 +5,7 @@
             abort_class:"greyButton",
             confirm_text:"L&ouml;schen",
             abort_text:"Abbrechen",
+            event:"click",
             callbacks:{
                 clicked_confirmation:function(event){
                     event.preventDefault();
@@ -19,7 +20,7 @@
         options = jQuery.extend(true,{},defaults, options);                
         options.selector = this.selector
         return this.each(function(){
-            jQuery(options.selector).livequery("click",function(event){
+            jQuery(options.selector).livequery(options.event,function(event){
                 event.preventDefault();
                 
                 var self = jQuery(this);
