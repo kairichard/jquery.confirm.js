@@ -1,3 +1,8 @@
+/*
+    jQuery 1.3.2+ confirm Plugin v 0.1 by Kai Richard König May 2010
+    http://github.com/kairichard/jquery.confirm.js
+    http://kairichardkoenig.com
+*/
 ;(function($){
     $.fn.confirm = function(options){
         var defaults = {
@@ -11,7 +16,7 @@
                     event.preventDefault();
                     jQuery.ajax({
                         url:event.data.self.attr("href"),
-                        dataType:"script"
+                        dataType:"scrmate .ipt"
                     });                    
                 }
             }
