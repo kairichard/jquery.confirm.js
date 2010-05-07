@@ -1,5 +1,5 @@
 /*
-    jQuery 1.3.2+ confirm Plugin v 0.1 by Kai Richard König May 2010
+    jQuery 1.3.2+ confirm Plugin v 0.1 by Kai Richard Koenig May 2010
     http://github.com/kairichard/jquery.confirm.js
     http://kairichardkoenig.com
 */
