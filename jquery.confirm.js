@@ -16,7 +16,7 @@
                     event.preventDefault();
                     jQuery.ajax({
                         url:event.data.self.attr("href"),
-                        dataType:"scrmate .ipt"
+                        dataType:"script"
                     });                    
                 }
             }
