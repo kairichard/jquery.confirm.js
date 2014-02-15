@@ -13,6 +13,7 @@ If you the decide to confirm your deletetion it will fire the callback.
 When you cancel the confirmation it will replace the confirmation markup with the previous parent's content.
 
 Options:
+```
     confirm_class:"blueButton",
     abort_class:"greyButton",
     confirm_text:"L&ouml;schen",
@@ -27,7 +28,7 @@ Options:
             });                    
         }
     }
-    
+```    
 --------    
 Than it looks like this
 
